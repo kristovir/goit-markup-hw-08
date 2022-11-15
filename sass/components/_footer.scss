@@ -1,0 +1,26 @@
+.footer {
+    background-color: #2f303a;
+    padding: 60px 0 60px 0;
+
+&__box-contact {
+    flex-direction: column;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+}
+&__box-net,
+&__box-form {
+    padding-top: 12px;
+}
+&__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+}
+

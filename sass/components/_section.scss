@@ -1,0 +1,66 @@
+.section {
+    padding: 94px 0;
+
+    &__hero {
+            background-color: #2f303a;
+            max-width: 1600px;
+            height: 600px;
+            margin: 0 auto;
+            background-position: center;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/imges-hero.jpg);
+            padding: 200px 0 200px 0;
+
+            }
+
+    &__hero-title{
+            display: block;
+             max-width: 696px;
+             margin: 0 auto 30px auto;
+            text-align: center;
+                    
+             font-size: 44px;
+            font-weight: 900;
+             letter-spacing: 0.06em;
+             color: #ffffff;
+             line-height: 1.36;
+             text-transform: uppercase;
+           }
+
+    &__features {
+            padding-top: 2px;
+            padding-bottom: 118px;
+        
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+        }
+
+    &__activity {
+        padding-top: 0;
+    }
+
+    &__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    line-height: 1.17;
+}
+
+   &__title--hidden {
+       opacity: 0;
+}
+
+   &__team {
+       font-weight: 400;
+       background-color: #f5f4fa;
+}
+    }
+
+
+

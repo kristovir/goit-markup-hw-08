@@ -1,0 +1,40 @@
+.features-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+&__margin {
+    margin-bottom: 30px;
+}
+
+&__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
+    width: 270px;
+    height: 120px;
+}
+
+&__text {
+    width: 270px;
+}
+
+&__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    line-height: 1.17;
+    text-transform: uppercase;
+}
+}
+
+
+
+
+
+
+

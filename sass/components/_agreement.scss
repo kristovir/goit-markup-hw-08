@@ -1,0 +1,52 @@
+.agreement-box {
+    position: relative;
+    padding: 0 12px 0 12px;
+    margin-bottom: 30px;
+}
+
+
+
+.agreement {
+    display: inline-block;
+    position: relative;
+    padding-left: 36px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-main);
+
+    &__modal {
+    position: absolute;
+    left: 13px;
+    width: 16px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+&__vector {
+    position: absolute;
+    left: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--color-secondary);
+}
+
+&__modal:checked+&__vector {
+    background-color: var(--color-icon-hover);
+    border: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__link {
+    color: var(--color-icon-hover);
+}
+}
+
