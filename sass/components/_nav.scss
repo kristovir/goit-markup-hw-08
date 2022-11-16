@@ -2,7 +2,7 @@
     display: none;
     gap: 50px;
 
-    @media screen and (min-width: $breakpointTablet) and (max-width:$breakpointMaxTablet) {
+    @media screen and (min-width: $bpTablet) {
             display: flex;
     }
                

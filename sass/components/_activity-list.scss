@@ -26,7 +26,8 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-@media screen and (min-width: $breakpointTablet) and (max-width:$breakpointMaxTablet) {
+  @media screen and (min-width: $bpDesktop)  {
     flex-direction: row;
-}
+} 
+
 }

@@ -93,19 +93,22 @@
            }
 
       &__list-net{
+        position: relative;
         display: flex;
-        gap: 10px;
+        gap: 20px;
       }          
 
-     &__link {
+     &__link,
+     &__inst,
+      &__twit,
+      &__face{
   
   text-decoration: none;
   cursor: pointer;
   list-style: none;
 
-      display: inline-block;
-      margin-right: 20px;
-
+      display: flex;
+            
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 500;
@@ -113,11 +116,54 @@
       line-height: 1.22;
       letter-spacing: 0.02em; 
       color: var(--color-icon-hover);
+   
      }
 
-      &__link:last-child{
-       margin-right: 0;
-     }   
+     &__inst::after{
+      display: inline-block;
+        content: "";
+        width: 22px;
+        height: 0;
+        
+        position: absolute;
+        left: 85px;
+        bottom: 9px;
+        
+        border-radius: 2px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+          transform: rotate(90deg);
+
+     }
+
+        &__twit::after{
+          display: inline-block;
+            content: "";
+            width: 22px;
+            height: 0;
+          
+            position: absolute;
+            left: 162px;
+            bottom: 9px;
+          
+            border-radius: 2px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+        }
+
+         &__face::after {
+           display: inline-block;
+           content: "";
+           width: 22px;
+           height: 0;
+
+           position: absolute;
+          left: 264px;
+           bottom: 9px;
+
+           border-radius: 2px;
+           border: 1px solid rgba(33, 33, 33, 0.2);
+           transform: rotate(90deg);
+                }
     
  }
 

@@ -1,24 +1,51 @@
 .features-list {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
+    width: $bpMobil;
 
-&__margin {
-    margin-bottom: 30px;
-}
+    @media screen and (min-width: $bpTablet) {
+        flex-direction: row;
+        
+        flex-wrap: wrap;
+        width: 768px;
+    }
+
+    @media screen and (min-width: $bpDesktop) {
+        flex-wrap: nowrap;
+        
+    }
+
 
 &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f5f4fa;
-    width: 270px;
-    height: 120px;
+    width: 480px;
+    height: 120px; 
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $bpTablet) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: $bpDesktop) {
+            width: 270px;
+        }
 }
 
 &__text {
-    width: 270px;
+    width: 450px;
+
+@media screen and (min-width: $bpTablet){
+    width: 354px;
+}
+    @media screen and (min-width: $bpDesktop){
+        width: 270px;
+    }
 }
 
 &__title {
@@ -28,7 +55,12 @@
     font-weight: 700;
     color: var(--color-secondary);
     line-height: 1.17;
+    text-align: center;
     text-transform: uppercase;
+
+    @media screen and (min-width: $bpTablet){
+        text-align: left;
+    }
 }
 }
 

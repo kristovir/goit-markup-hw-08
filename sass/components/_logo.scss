@@ -6,8 +6,11 @@
     text-decoration: none;
     cursor: pointer;
 
-    // font-size: 26px;
-    // line-height: 1.19;
+    @media screen and (min-width: $bpDesktop){
+    font-size: 26px;
+    line-height: 1.19;
+    }
+    
 
 &__web {
     color: #2196f3;

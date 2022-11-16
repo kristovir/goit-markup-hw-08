@@ -20,12 +20,17 @@
              margin: 0 auto 30px auto;
             text-align: center;
                     
-             font-size: 44px;
+            font-size: 26px;
+            line-height: 1.61;
             font-weight: 900;
              letter-spacing: 0.06em;
              color: #ffffff;
-             line-height: 1.36;
-             text-transform: uppercase;
+              text-transform: uppercase;
+
+             @media screen and (min-width: $bpDesktop) {
+                font-size: 44px; 
+                line-height: 1.36;
+             }
            }
 
     &__features {
@@ -39,26 +44,42 @@
 
     &__activity {
         padding-top: 0;
+        display: none;
+
+        @media screen and (min-width: $bpDesktop) {
+            display: block;
+        }
     }
 
     &__title {
     display: block;
     text-align: center;
     margin-bottom: 50px;
-
-    font-size: 36px;
+    font-size: 33px;
+    line-height: 1.17;
+    
     font-weight: 700;
     color: var(--color-secondary);
-    line-height: 1.17;
+    
+    @media screen and (min-width: $bpDesktop) {
+        font-size: 36px;
+        }
 }
 
    &__title--hidden {
+
        opacity: 0;
 }
 
    &__team {
        font-weight: 400;
        background-color: #f5f4fa;
+       padding-top: 0;
+
+       @media screen and (min-width: $bpDesktop) {
+        padding-top: 94px;
+       }
+    
 }
     }
 
