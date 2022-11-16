@@ -4,6 +4,20 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    width: 480px;
+
+    @media screen and (min-width: $bpTablet) {
+            flex-direction: row;
+                
+            width: 768px;
+        }
+    
+        @media screen and (min-width: $bpDesktop) {
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            width: 100%;
+    
+        }
 
 &__link {
     display: flex;

@@ -15,6 +15,8 @@
 
     @media screen and (min-width: $bpDesktop) {
         flex-wrap: nowrap;
+        align-items: flex-start;
+        width: 100%;
         
     }
 

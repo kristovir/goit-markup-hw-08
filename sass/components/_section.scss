@@ -35,11 +35,15 @@
 
     &__features {
             padding-top: 2px;
-            padding-bottom: 118px;
+            padding-bottom: 60px;
         
             font-size: 14px;
             font-weight: 400;
             line-height: 1.71;
+
+            @media screen and (min-width: $bpDesktop){
+                padding-bottom: 118px;
+            }
         }
 
     &__activity {
@@ -54,7 +58,7 @@
     &__title {
     display: block;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 33px;
     line-height: 1.17;
     
@@ -63,6 +67,7 @@
     
     @media screen and (min-width: $bpDesktop) {
         font-size: 36px;
+        margin-bottom: 50px;
         }
 }
 
@@ -75,13 +80,23 @@
        font-weight: 400;
        background-color: #f5f4fa;
        padding-top: 0;
+       padding-bottom: 60px;
 
        @media screen and (min-width: $bpDesktop) {
         padding-top: 94px;
-       }
-    
+               }
 }
+
+               &__clients{
+                padding: 60px 0;
+
+        @media screen and (min-width: $bpDesktop) {
+        padding: 94px 0;
+
+               }
     }
+
+}
 
 
 
