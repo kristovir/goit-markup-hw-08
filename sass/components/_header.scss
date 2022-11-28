@@ -47,11 +47,14 @@ fill: var(--color-icon-hover);
      gap: 10px; 
     background-position: center;
 
- @media screen and (min-width: $bpTablet) and (max-width:$bpMaxTablet)  {
+ @media screen and (min-width: $bpTablet) {
     display: flex;        
     flex-direction: column;
-             
-           }
+}
+            @media screen and (min-width: $bpDesktop){
+                flex-direction: row;
+            }
+           
 }
 
 

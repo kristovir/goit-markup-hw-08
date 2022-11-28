@@ -26,6 +26,11 @@
         background-color: #ffffff;
 
     padding: 40px;
+
+    @media screen and (min-width: $bpDesktop){
+        width: 528px;
+            height: 581px;
+    }
 }
 
 &__button-close {

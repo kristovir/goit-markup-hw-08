@@ -1,7 +1,10 @@
 .agreement-box {
     position: relative;
-    padding: 0 12px 0 12px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $bpDesktop){
+        padding: 0 12px 0 12px;
+    }
 }
 
 
@@ -9,26 +12,36 @@
 .agreement {
     display: inline-block;
     position: relative;
-    padding-left: 36px;
+    padding-left: 24px;
 
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--color-main);
 
+    @media screen and (min-width: $bpDesktop){
+        font-size: 14px;
+            line-height: 1.71;
+            padding-left: 36px;
+    }
+
     &__modal {
     position: absolute;
-    left: 13px;
+    left: 0;
+    top: 50%;
     width: 16px;
     height: 15px;
-    top: 50%;
     transform: translateY(-50%);
     opacity: 0;
+
+    @media screen and (min-width: $bpDesktop){
+        left: 13px;
+    }
 }
 
 &__vector {
     position: absolute;
-    left: 13px;
+    left: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +51,10 @@
     width: 16px;
     height: 15px;
     border: 2px solid var(--color-secondary);
+
+    @media screen and (min-width: $bpDesktop) {
+            left: 13px;
+        }
 }
 
 &__modal:checked+&__vector {

@@ -24,15 +24,12 @@ ul {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    text-align: -webkit-center;
+   }
 
-    // @media screen and (min-width:$bpTablet) {
-    //     max-width: 1199px;
-    // }
-
-    // @media screen and (min-width:$bpDesktop) {
-    //     max-width: 1200px;
-    // }
-}
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }

@@ -4,14 +4,46 @@
     &__hero {
             background-color: #2f303a;
             max-width: 1600px;
-            height: 600px;
-            margin: 0 auto;
+             margin: 0 auto;
             background-position: center;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../images/imges-hero.jpg);
-            padding: 200px 0 200px 0;
+            background-size: cover;
+            padding: 118px 0;
+            background-image: $lin-gr,
+                url("../images/header-img-mob.jpg");
+            
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+                (min-resolution: 2dppx){
+                background-image: $lin-gr,
+                  url("../images/header-img-mob x2.jpg");
+                }
 
+
+            @media screen and (min-width: $bpTablet){
+              background-image: $lin-gr,
+              url("../images/header-img-tablet.jpg");
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                    (min-resolution: 2dppx){
+                        background-image: $lin-gr,
+            url("../images/header-img-tablet x2.jpg");
+                    }
+                 }               
+            
+
+            @media screen and (min-width: $bpDesktop){
+                padding: 200px 0;
+                background-image: $lin-gr,
+            url("../images/imges-hero.jpg");
+
+             @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: $lin-gr,
+                url("../images/header-img x2.jpg");
+                   }
+                }
             }
 
     &__hero-title{

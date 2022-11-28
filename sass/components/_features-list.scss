@@ -4,13 +4,13 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    width: $bpMobil;
+    max-width: $bpMobil;
 
     @media screen and (min-width: $bpTablet) {
         flex-direction: row;
         
         flex-wrap: wrap;
-        width: 768px;
+        max-width: 768px;
     }
 
     @media screen and (min-width: $bpDesktop) {
@@ -26,12 +26,12 @@
     align-items: center;
     justify-content: center;
     background-color: #f5f4fa;
-    width: 480px;
+    max-width: 480px;
     height: 120px; 
     margin-bottom: 30px;
 
     @media screen and (min-width: $bpTablet) {
-            width: 354px;
+            max-width: 354px;
         }
     
         @media screen and (min-width: $bpDesktop) {
@@ -40,7 +40,8 @@
 }
 
 &__text {
-    width: 450px;
+    max-width: 450px;
+    text-align: left;
 
 @media screen and (min-width: $bpTablet){
     width: 354px;
