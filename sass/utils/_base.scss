@@ -20,17 +20,17 @@ ul {
 }
 
 .container {
-    width: $bpMobil;
+    max-width: $bpMobil;
     margin: 0 auto;
     padding: 0 15px;
     text-align: -webkit-center;
 
     @media screen and (min-width: $bpTablet){
-      width: $bpTablet;
+      max-width: $bpTablet;
     }
 
     @media screen and (min-width: $bpDesktop){
-     width: $bpDesktop;
+     max-width: $bpDesktop;
     }
    }
 
