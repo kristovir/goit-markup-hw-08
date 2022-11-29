@@ -53,6 +53,7 @@ fill: var(--color-icon-hover);
 }
             @media screen and (min-width: $bpDesktop){
                 flex-direction: row;
+                gap: 30px;
             }
            
 }

@@ -48,7 +48,7 @@
 
     &__hero-title{
             display: block;
-             max-width: 696px;
+             max-width: 360px;
              margin: 0 auto 30px auto;
             text-align: center;
                     
@@ -62,19 +62,18 @@
              @media screen and (min-width: $bpDesktop) {
                 font-size: 44px; 
                 line-height: 1.36;
+                max-width: 696px;
              }
            }
 
     &__features {
-            padding-top: 2px;
-            padding-bottom: 60px;
-        
+            padding: 60px 0;
             font-size: 14px;
             font-weight: 400;
             line-height: 1.71;
 
             @media screen and (min-width: $bpDesktop){
-                padding-bottom: 118px;
+                padding: 94px 0;
             }
         }
 
@@ -91,31 +90,31 @@
     display: block;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 33px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     
     font-weight: 700;
     color: var(--color-secondary);
     
     @media screen and (min-width: $bpDesktop) {
         font-size: 36px;
+        line-height: 1.17;
         margin-bottom: 50px;
         }
 }
 
    &__title--hidden {
-
-       opacity: 0;
+    display: none;
 }
 
    &__team {
        font-weight: 400;
        background-color: #f5f4fa;
        padding-top: 0;
-       padding-bottom: 60px;
+       padding: 60px 0;
 
        @media screen and (min-width: $bpDesktop) {
-        padding-top: 94px;
+        padding: 94px 0;
                }
 }
 
