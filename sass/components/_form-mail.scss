@@ -17,10 +17,15 @@
 }
 
 &__box {
-    display: flex;
+    display: inline-flex;
     gap: 20px;
     margin-top: 20px;
     flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: $bpTablet){
+        display: flex;
+    }
 
     @media screen and (min-width: $bpDesktop){
         flex-direction: row;
