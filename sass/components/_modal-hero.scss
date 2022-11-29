@@ -19,13 +19,18 @@
     transform: translate(-50%, -50%) scale(1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    width: 450px;
-    height: 609px;
-        // 528px;height: 581px
+    width: 100%;
+    height: auto;
+        
             
         background-color: #ffffff;
 
     padding: 40px;
+
+    @media screen and (min-width: $bpMobil){
+        width: 450px;
+        height: 609px;
+    }
 
     @media screen and (min-width: $bpDesktop){
         width: 528px;
