@@ -52,7 +52,8 @@
     cursor: pointer;  
       fill: var(--color-secondary); 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+
+      }
 
   &__button-close:hover,
   &__button-close:focus{
@@ -61,9 +62,13 @@
   }
 
    &__nav{
-      font-size: 40px;
+      font-size: 35px;
        text-align: left;
        margin-bottom: auto;
+
+      @media screen and (min-width: $bpMobil) {
+        font-size: 40px;
+      }
   }
 
   &__link-studio,
@@ -92,21 +97,32 @@
   }
 
      &__contact-tel{
-      font-size: 34px;
+      font-size: 24px;
             color: var(--color-icon-hover);
-            margin-bottom: 32px;
+            margin-bottom: 26px;
+
+    @media screen and (min-width: $bpMobil) {
+    font-size: 34px;
+    margin-bottom: 32px;
+  }
+           
      }
 
    &__contact-mail{
-        font-size: 24px;
+        font-size: 22px;
         color: var(--color-main);
-        padding-bottom: 64px;
+        padding-bottom: 50px;
+
+        @media screen and (min-width: $bpMobil) {
+            font-size: 24px;
+            padding-bottom: 64px;
+          }
            }
 
       &__list-net{
         position: relative;
         display: flex;
-        gap: 20px;
+        gap: 10px;
       }          
 
      &__link,
@@ -118,63 +134,36 @@
   cursor: pointer;
   list-style: none;
 
-      display: flex;
+      
             
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 12px;
       line-height: 1.22;
       letter-spacing: 0.02em; 
       color: var(--color-icon-hover);
+
+     @media screen and (min-width: 380px) {
+      font-size: 14px;
+  
+    }
+
+      @media screen and (min-width: $bpMobil) {
+          font-size: 18px;
+          
+        }
    
      }
 
-     &__inst::after{
-      display: inline-block;
-        content: "";
-        width: 22px;
-        height: 0;
-        
-        position: absolute;
-        left: 85px;
-        bottom: 9px;
-        
+     &__inst-border{
         border-radius: 2px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-          transform: rotate(90deg);
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+        padding-left: 10px;
 
      }
 
-        &__twit::after{
-          display: inline-block;
-            content: "";
-            width: 22px;
-            height: 0;
-          
-            position: absolute;
-            left: 162px;
-            bottom: 9px;
-          
-            border-radius: 2px;
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: rotate(90deg);
-        }
-
-         &__face::after {
-           display: inline-block;
-           content: "";
-           width: 22px;
-           height: 0;
-
-           position: absolute;
-          left: 264px;
-           bottom: 9px;
-
-           border-radius: 2px;
-           border: 1px solid rgba(33, 33, 33, 0.2);
-           transform: rotate(90deg);
-                }
-    
+         
  }
 
